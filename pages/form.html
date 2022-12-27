@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylecopy.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="span">
+          Bible Verses <i class="bi bi-star" style="color: red"></i>
+        </h1>
+        <div class="menubody" onclick="openBar()">
+          <i class="bi bi-list menu-icon"></i>
+        </div>
+        <span><img src="bible.png" alt="" /></span>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#!">Mood</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <form action="connect.php" method="post">
+        <h3>CONTACT US</h3>
+        <input
+          type="text"
+          id="name"
+          placeholder="First Name"
+          name="firstName"
+          required
+        />
+        <input
+          type="text"
+          id="name"
+          placeholder="Last Name"
+          name="lastName"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          placeholder="Email id"
+          name="email"
+          required
+        />
+        <input
+          type="password"
+          id="email"
+          placeholder="Password"
+          name="password"
+          required
+        />
+        <input
+          type="text"
+          id="phone"
+          placeholder="Phone no."
+          name="number"
+          required
+        />
+        <textarea
+          id="message"
+          placeholder="How can we help you"
+          name="comment"
+          rows="4"
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <div class="all">
+      <div class="bod">
+        <div class="link">
+          <a href="index.html"><i class="bi bi-house"></i></a>
+          <a href="about.html"><i class="bi bi-folder-fill"></i></a>
+          <a href="mood.html"><i class="bi bi-code"></i></a>
+          <a href="#!"><i class="bi bi-house"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "danielegwuatu123@gmail.com",
+          Password: "engr.dan@2005",
+          To: "egwuatudaniel479@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "New contact form enquiry",
+          Body:
+            "Name: " +
+            document.getElementById("name").value +
+            "<br> Email: " +
+            document.getElementById("email").value +
+            "<br> Phone no: " +
+            document.getElementById("phone").value +
+            "<br> Message: " +
+            document.getElementById("message").value,
+        }).then((message) => alert("Message Sent Succesfully"));
+      }
+    </script> -->
+  </body>
+</html>

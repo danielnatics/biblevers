@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="bible.png" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bible Verses</title>
+  </head>
+  <body id="bodi" onload="showPop()">
+    <div class="head">
+      <header>
+        <nav>
+          <h1 class="span">
+            Bible Verses <i class="bi bi-star" style="color: red"></i>
+          </h1>
+          <div class="menubody" onclick="openBar()">
+            <i class="bi bi-list menu-icon"></i>
+          </div>
+
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/contact.html">Contact Us</a></li>
+            <li><a href="pages/mood.html">Mood</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="sidebar">
+      <i class="bi bi-x-circle" id="closebtn" onclick="closeBar()"></i>
+
+      <ul class="sidebar-link">
+        <li><a href="#" id="class">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/contact.html">Contact us</a></li>
+        <li><a href="pages/mood.html">Mood</a></li>
+        <li><a href="index.html">Sign Out</a></li>
+      </ul>
+    </div>
+    <div class="sec1" id="home">
+      <h1 class="h1">Find Inspiration From The Words Of the Bible</h1>
+
+      <h3 class="h3">
+        Overcome fear, sadness, depression, anxiety & loss with daily bible
+        verses
+      </h3>
+      <div class="btn">
+        <button onclick="getLocation()">Location</button>
+        <p id="demo"></p>
+        <button>Verses by Category</button>
+      </div>
+    </div>
+    <section class="sec2">
+      <h1>Uplift & Overcome</h1>
+      <div>
+        <p>
+          Our purpose is to make the Bible accesible to everyone. It's our goal
+          to help you navigate from book to book, verse to verse while providing
+          coontext and community through the good and bad times
+        </p>
+      </div>
+    </section>
+
+    <section class="daily">
+      <div class="messages">
+        <h1>Daily Bible Verses</h1>
+        <h3>
+          Psalms 37 vs 4<span class="span"
+            >Take deligt in the Lord and he will grant you the desires of your
+            heart.</span class="span"
+          >
+        </h3>
+        <h3>
+          Romans 11 vs 29
+          <span class="span">For the gift and call of Good is irrevocable.</span class="span">
+        </h3>
+        <h3>
+          Psalm 145 vs 19
+          <span class="span"
+            >He fufils the desires of all who fear Him, He also hears their cry
+            and saves them</span class="span"
+          >
+        </h3>
+        <h3>
+          Proverbs 10 vs 22
+          <span class="span"
+            >The blessings of the Lord makes rich and He adds no sorrow with
+            it</span class="span"
+          >
+        </h3>
+       
+      </div>
+    </section>
+
+  <!-- <div class="pop-container">
+    Hello world
+  </div> -->
+    <div class="all">
+      <div class="bod">
+        <div class="link">
+          <a href="#"><i class="bi bi-house"></i><span>HOME</span></a>
+          <a href="pages/about.html"
+            ><i class="bi bi-person"></i><span>ABOUT</span></a
+          >
+          <a href="pages/contact.html"
+            ><i class="bi bi-telephone"></i><span>CONTACT</span></a
+          >
+          <a href="pages/mood.html"
+            ><i class="bi bi-code"></i><span>BLOG</span></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <!-- <button onclick="requestPermission()">
+        <i class="bi bi-bell-fill bell"></i>
+      </button> -->
+      <p>&copy;2022 Bibleverse.com all right reserved Dahez</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
