@@ -24,8 +24,8 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 2px;
+        padding-right: 2px;
       }
       #check {
         font-size: 2rem;
@@ -46,7 +46,6 @@
         padding: 15px;
         width: 100%;
         border-radius: 15px;
-        border: 10px solid black;
       }
       input {
         text-transform: uppercase;
@@ -111,7 +110,30 @@
           text-transform: uppercase;
           width: 100%;
           height: 45px;
+          font-size: 0.8rem;
+        }
+        .text {
+          width: 100%;
+          padding-left: 3px;
+          outline: none;
+          border: 2px solid #ccc;
+          border-radius: 7px;
+          color: black;
+          transition: 0.4s ease;
+        }
+        .alert {
+        }
+        .warn-style {
+          visibility: visible;
+          color: rgba(85, 0, 0, 0.872);
+          fill-opacity: 0.2;
           font-size: 1.2rem;
+          font-style: italic;
+        }
+        h1 {
+          color: #dfe1e6;
+          font-size: 1.5em;
+          font-family: cursive;
         }
       }
     </style>
@@ -167,7 +189,7 @@
       function ofFunction() {
         setTimeout(function () {
           warn.textContent = "";
-        }, 3000);
+        }, 1800);
       }
 
       function work() {
@@ -175,13 +197,15 @@
         const pass = document.getElementById("password");
         event.preventDefault();
 
-        if (
-          name.value == "GENESIS" ||
-          name.value == "DANIEL" ||
-          pass.value == 12345678
-        ) {
+        if (name.value == "GENESIS" || pass.value == 12345678) {
           // alert("Login Successful");
           window.location.href = "landing.html";
+          name.value = "";
+          pass.value = "";
+        } else if (name.value == "" && pass.value == "") {
+          warn.classList.add("warn-style");
+          warn.textContent = "Enter Username or Password";
+          ofFunction();
           name.value = "";
           pass.value = "";
         } else {
