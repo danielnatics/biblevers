@@ -158,6 +158,7 @@ button:hover {
 .sec2 h1 {
   font-size: 2.5rem;
   margin-bottom: 15px;
+  margin-top: 10px;
 }
 .sec2 div {
   width: 100%;
@@ -451,7 +452,10 @@ footer button .bell {
   }
   .bi {
     color: white;
-    font-size: 15px;
+    font-size: 19px;
+  }
+  #bi {
+    font-size: 28px;
   }
   .daily {
     background-color: #5927c4;
@@ -535,10 +539,27 @@ footer button .bell {
   }
   .link a span {
     color: #ecec;
-    font-size: 12px;
+    font-size: 15px;
   }
   .believe {
-    height: 50px;
+    height: ;
+    text-align: center;
+  }
+  .believe h2 {
+    margin-top: 10px;
+  }
+  #downloadbtn {
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .comment {
+    height: 200px;
+    padding: 10px;
+  }
+  #textarea {
+    height: 60px;
+    width: 100%;
   }
 }
 
