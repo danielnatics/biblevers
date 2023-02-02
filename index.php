@@ -145,7 +145,7 @@
         <form onsubmit="submit()">
           <input
             type="text"
-            placeholder="User Id: First chapter of the Bible"
+            placeholder="User Id: First Book of the Bible"
             id="firstname"
             class="text"
           />
